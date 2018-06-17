@@ -1,0 +1,119 @@
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img, button, input {
+  border: 0;
+}
+
+em, i, u {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body {
+  font: 12px/1.5 'microsoft yahei', Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  font-family: 'microsoft yahei';
+}
+
+a:hover {
+  color: #c81623;
+}
+
+/* 版心公共类 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pd-5 {
+  padding-bottom: 5px;
+}
+
+.m-color {
+  color: #c81623;
+}
+
+/* 针对字体图标 避免对旁边的问题的高度造成影响*/
+/* 字体图标使用的细节：
+1、给字体图标设置一个默认的行高 建议1
+2、字体图标的大小设置在自身身上 */
+.iconfont {
+  line-height: 1;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*单行文本强制不换行*/
+.one-txt-cut {
+  /* 这三句话缺一不可 */
+  overflow: hidden;
+  /* 文本强制不换行 */
+  white-space: nowrap;
+  /* 以省略号的形式显示多余的文本 */
+  text-overflow: ellipsis;
+}
+
+
+

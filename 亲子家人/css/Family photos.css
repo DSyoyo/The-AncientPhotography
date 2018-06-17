@@ -1,0 +1,686 @@
+@charset "UTF-8";
+
+/** {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+/*.container {*/
+/*width: 1200px;*/
+/*}*/
+/*.sample {*/
+/*width: 100%;*/
+/*height: 196px;*/
+/*position: relative;*/
+/*}*/
+/*.sample .sample-dis {*/
+/*width: 434px;*/
+/*height: 112px;*/
+/*border: 10px solid red;*/
+/*box-sizing: border-box;*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*margin-left: -217px;*/
+/*top: 50%;*/
+/*margin-top: -56px;*/
+/*头部导航开始*/
+.head {
+  height: 50px;
+  background-color: #A3235E;
+}
+
+.top-nav {
+  height: 50px;
+  width: 1366px;
+  /*line-height: 50px;*/
+  background: url(../upload/logo.png) 52px 0 no-repeat;
+  position: relative;
+}
+
+/*右边标题介绍*/
+.nav-con {
+  margin-left: 195px;
+  position: absolute;
+}
+
+.nav-con ul li {
+  width: 80px;
+  margin-right: 20px;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-con ul li:hover {
+  background-color: deepskyblue;
+}
+
+.nav-con ul li a {
+  color: #fff;
+}
+
+/*写真馆下拉列表*/
+
+/*当前城市*/
+.city {
+  width: 124px;
+  height: 50px;
+  background-color: #920E51;
+  position: absolute;
+  right: 330px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*头部导航结束*/
+
+/*banner图片开始*/
+.banner {
+  width: 1366px;
+  height: 321px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner ul {
+  width: 1000%;
+  height: 321px;
+  position: absolute;
+}
+
+.banner ul li {
+  float: left;
+}
+
+.banner ul li img {
+  width: 1366px;
+  height: 321px;
+}
+
+/*小圆点*/
+.banner ol {
+  width: 132px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 50%;
+  margin-left: -66px;
+  bottom: 20px;
+  border-radius: 10px;
+}
+
+.banner ol li {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  float: left;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.banner ol li.now {
+  background-color: skyblue;
+}
+
+/*左右箭头*/
+.banner .arrow {
+  display: none;
+}
+
+.banner:hover .arrow {
+  display: block;
+}
+
+.banner .arrow .left,
+.banner .arrow .right {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 20px;
+  font-family: "宋体";
+  text-decoration: none;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.banner .arrow .left {
+  left: 120px;
+}
+
+.banner .arrow .right {
+  right: 120px;
+}
+
+.banner .arrow .left,
+.banner .arrow .right {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+/*banner图片结束*/
+
+/*<!--拍照意义开始-->*/
+
+/*.meaning {*/
+/*height: 710px;*/
+/*margin-top: 50px;*/
+/*background: url(../images/d0.jpg) center center no-repeat;*/
+/*}*/
+/*.meaning .show  {*/
+/*height: 710px;*/
+/*width: 1213px;*/
+/*margin: 0 auto;*/
+/*background-color: rgba(0,0,0,0);*/
+/*text-align: center;*/
+/*display: block;*/
+/*}*/
+/*.meaning .hide {*/
+/*display: none;*/
+/*}*/
+/*.meaning .show p {*/
+/*font-size: 20px;*/
+/*line-height: 40px;*/
+/*color: #fff;*/
+/*}*/
+
+/*.meaning .ps {*/
+/*height: 710px;*/
+/*width: 1213px;*/
+/*margin: 0 auto;*/
+/*background-color: rgba(0,0,0,0.8);*/
+/*text-align: center;*/
+/*display: none;*/
+/*transition: 1s;*/
+/*}*/
+
+/*.meaning .ps p {*/
+/*font-size: 20px;*/
+/*line-height: 40px;*/
+/*color: #fff;*/
+/*}*/
+
+.meaning {
+  height: 710px;
+  margin-top: 50px;
+  background: url(../upload/d0.jpg) center center no-repeat;
+}
+
+.meaning .ps {
+  height: 710px;
+  width: 1213px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #000;
+  opacity: 0;
+}
+
+.meaning .ps p {
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+}
+
+/*<!--拍照意义结束-->*/
+
+/*<!--客户样品展示开始-->*/
+.guest-ph {
+  min-height: 100px;
+}
+
+.ph-title {
+  height: 216px;
+  background-color: #F3F3F3;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.ph-title p {
+  font-size: 36px;
+  color: gray;
+  margin: 42px 0 60px 0;
+  /*文字凸起*/
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+}
+
+.ph-title .ph-list {
+  /*position: absolute;*/
+  width: 697px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.ph-title .ph-list li {
+  float: left;
+  width: 110px;
+  height: 58px;
+  /*border: 1px solid #ccc;*/
+  text-align: center;
+  line-height: 58px;
+  background-color: #EDEDED;
+  margin-right: 5px;
+}
+
+.ph-title .ph-list li:hover {
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.ph-title .ph-list li.last {
+  margin-right: 0;
+}
+
+.ph-title .ph-list li a {
+  font-size: 22px;
+  color: #ccc;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px white;
+
+}
+
+/*.ph-title .ph-list li a:hover {*/
+/*color: #666;*/
+/*}*/
+
+/*<!--婴儿照开始-->*/
+.infant {
+  min-height: 600px;
+}
+
+.infant .infant-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.infant-t p {
+  font-size: 16px;
+  color: #ccc;
+  /*text-shadow: 1px 1px 1px black, -1px -1px 1px white;*/
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.infant-t p.first {
+  font-size: 18px;
+}
+
+.infant-pic li {
+  width: 318px;
+  height: 466px;
+  /*background-color: pink;*/
+  float: left;
+  margin: 0 9px 20px;
+}
+
+.infant-pic .pic-p {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  /*盒子阴影*/
+}
+
+.infant-pic li img {
+  width: 318px;
+}
+
+.infant-pic li p {
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.infant-pic li p.time {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/*<!--婴儿照结束-->*/
+
+/*百天照开始*/
+.hundred {
+  min-height: 600px;
+}
+
+.hundred .hundred-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hundred-t p {
+  font-size: 16px;
+  color: #ccc;
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.hundred-t p.first {
+  font-size: 18px;
+}
+
+.hundred-pic li {
+  width: 318px;
+  height: 466px;
+  float: left;
+  margin: 0 9px 20px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*//鼠标移动到图片上图片慢慢放大*/
+/*可以直接用transition: All in 0.4s hover：transform:scale (1.2);*/
+.hundred-pic li .pic-h {
+  width: 318px;
+  height: 409px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pic-h img {
+  width: 318px;
+  height: auto;
+  position: absolute;
+  transition: All 2s ease-in-out;
+  /*top: 0px;*/
+  /*left: 0px;*/
+}
+
+.pic-h:hover img {
+  width: 350px;
+  /*top: -15px;*/
+  /*left: -15px;*/
+  /*transition: 3s;*/
+  transform: scale(1.2);
+}
+
+.hundred-pic li p {
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.hundred-pic li p.time {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/*百天照结束*/
+
+/*<!--周岁照开始-->*/
+
+.one-year {
+  min-height: 600px;
+}
+
+.one-year .one-year-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.one-year-t p {
+  font-size: 16px;
+  color: #ccc;
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.one-year-t p.first {
+  font-size: 18px;
+}
+
+.photoContentList > div {
+  display: none;
+}
+
+.photoContentList > div:nth-child(1) {
+  display: block;
+}
+
+/*.accordion {*/
+/*width: 1336px;*/
+/*height: 450px;*/
+/*padding: 0 9px;*/
+
+/*overflow: hidden;*/
+/*}*/
+
+/*.accordion ul {*/
+/*width: 1366px;*/
+/*}*/
+
+/*.accordion li {*/
+/*width: 166px;*/
+/*height: 450px;*/
+/*float: left;*/
+
+/*}*/
+
+/*定位版*/
+.accordion {
+  width: 1260px;
+  height: 450px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.accordion li {
+  width: 1260px;
+  height: 450px;
+  position: absolute;
+}
+
+/*<!--周岁照结束-->*/
+
+/*1-3岁照开始*/
+.oneTh-year {
+  min-height: 600px;
+}
+
+.oneTh-year .oneTh-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.oneTh-t p {
+  font-size: 16px;
+  color: #ccc;
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.oneTh-t P.first {
+  font-size: 18px;
+}
+
+.wrap {
+  width: 1280px;
+  /*height: 500px;*/
+  /*border: 1px solid #000;*/
+  margin: 10px auto;
+}
+
+.wrap .slide {
+  height: 500px;
+  position: relative;
+}
+
+.wrap .slide li {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.wrap .slide li img {
+  width: 100%;
+}
+
+.wrap .slide .arrow {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+}
+
+.slide .arrow .arrLeft,
+.slide .arrow .arrRight {
+  width: 22px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  background: url(../images/prev.png) no-repeat;
+  z-index: 99;
+}
+
+.slide .arrow .arrRight {
+  right: -1280px;
+  background-image: url(../images/next.png);
+}
+
+/*1-3岁照结束*/
+
+/*3-6岁开始*/
+
+.children {
+  min-height: 600px;
+}
+
+/*标题*/
+.children .children-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.children-t p {
+  font-size: 16px;
+  color: #ccc;
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.children-t p.first {
+  font-size: 18px;
+}
+.children-pic li {
+  width: 318px;
+  height: 466px;
+  /*background-color: pink;*/
+  float: left;
+  margin: 0 9px 20px;
+}
+
+.children-pic .pic-p {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  /*盒子阴影*/
+}
+
+/*鼠标移上去，盒子向上移动*/
+.children-pic .pic-p:hover {
+  margin-top: -5px;
+  transition: 0.5s; /*向上过渡效果*/
+}
+
+.children-pic li img {
+  width: 318px;
+}
+
+.children-pic li p {
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.children-pic li p.time {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/*3-6岁结束*/
+
+/*亲子照开始*/
+.family {
+  min-height: 936px;
+}
+
+/*标题*/
+.family .family-t {
+  height: 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.family-t p {
+  font-size: 16px;
+  color: #ccc;
+  text-shadow: -1px -1px 1px black, 1px 1px 1px white;
+}
+
+.family-t p.first {
+  font-size: 18px;
+}
+/*采用定位方式*/
+.family-pic li {
+  width: 318px;
+  height: 409px;
+  /*background-color: pink;*/
+  float: left;
+  margin: 0 9px 20px;
+  /*盒子阴影*/
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.family-pic li img {
+  width: 318px;
+}
+
+.family-pic .pic-con {
+  height: 58px;
+  width: 318px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  /*margin-top: 409px;*/
+  transition: all 1s;
+}
+
+.family-pic li:hover .pic-con {
+  /*bottom:0;*/
+  opacity: 1;
+}
+
+.family-pic li .pic-con p {
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.family-pic li .pic-con p.time {
+  font-size: 14px;
+}
+
+/*亲子照结束*/
+/*<!--客户样品展示结束-->*/

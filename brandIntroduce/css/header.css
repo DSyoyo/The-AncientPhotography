@@ -1,0 +1,81 @@
+/*头部与底部公共部分*/
+
+/*公共头部开始*/
+
+.header {
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  background-color: #76bfc8;
+}
+
+.header .logo {
+  width: 92px;
+  height: 40px;
+  background: url(../images/small_icon.png) -894px -175px;
+  float: left;
+  margin: 15px 30px 0 0;
+}
+
+.header .navigation {
+  float: left;
+}
+
+.header .navigation > li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  width: 100px;
+  text-align: center;
+}
+
+.header .navigation > li > a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header .navigation > li:hover {
+  background-image: url(../images/bgi-bihead.jpg);
+}
+
+/*字体图标*/
+.iconfont {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*导航栏品牌介绍下拉列表*/
+.header .brandIntroduce {
+  position: relative;
+}
+
+.header .brandIntroduce .biSelected {
+  background-color: #7EC4CC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 60px;
+  margin-left: 20px;
+  display: none;
+}
+
+.header .brandIntroduce:hover .biSelected {
+  display: block;
+  z-index: 2;
+}
+
+.header .brandIntroduce .biSelected > li {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .brandIntroduce .biSelected > li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+/*公共头部结束*/
